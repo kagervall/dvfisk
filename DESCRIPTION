@@ -1,6 +1,6 @@
 Package: sersapi
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Query and Get Data From wedish Electrofishing Register (SERS)
 Version: 0.1.0
 Authors@R: person(
     "Anders", "Kagervall",
@@ -8,8 +8,8 @@ Authors@R: person(
     email = "anders.kagervall@slu.se",
     comment = c(ORCID = "0000-0003-4790-2696")
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
+Description: Query and Get Data From wedish Electrofishing Register (SERS)
+  Uses the webapi at https://dvfisk.slu.se/swagger/index.html
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true

@@ -13,7 +13,7 @@
 .sers_data_endpoint <-function(what) {
   allowed <- c("lan", "kommuner", "huvudavrinningsomraden", "rapport")
   if (!what %in% allowed) {
-    stop("Internal error in package sersapi'what' parameter. Must be one of: ", paste(allowed, collapse = ", "))
+    stop("Internal error in package sersapi 'what' parameter. Must be one of: ", paste(allowed, collapse = ", "))
   }
   base_url <- sersapi_options()$base_url
   url <- paste0(base_url, "/", what)
@@ -116,8 +116,8 @@ sers_data_vix_huvudavrinningsomraden <- function() {
 sers_data_vix_rapport <- function(lan = NULL, kommun = NULL, haroNr = NULL,
                                   startdatum = NULL, slutdatum = NULL) {
   req <- .sers_data_endpoint("rapport")
-  if (!is.null(lan) & !is.null(kommun) & !is.null(haroNr) &
-      !is.null(startdatum) & !is.null(slutdatum)) {
+  if (is.null(lan) & is.null(kommun) & is.null(haroNr) &
+      is.null(startdatum) & is.null(slutdatum)) {
     stop("You must provide at least one of the following parameters: lan, kommun, haroNr, startdatum, slutdatum")
   }
 

@@ -6,6 +6,7 @@
 #' @returns
 #' A httr2 request object
 #'
+#' @keywords internal
 #' @examples
 #' \dontrun{
 #' req <- .sers_data_endpoint("lan")
@@ -55,7 +56,7 @@ sers_data_vix_lan <- function() {
 #'
 #' @examples
 #' # This example will access the Internet to get the data and will not work offline
-#' kommuner <- sers_data_vix_kommuner("Västra Götalands län")
+#' kommuner <- sers_data_vix_kommuner("Västra Götaland")
 #' kommuner
 sers_data_vix_kommuner <- function(lan) {
   req <- .sers_data_endpoint("kommuner") |>

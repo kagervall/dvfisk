@@ -18,6 +18,6 @@ The parameter \code{lan} must be a valid county (län) in Sweden.
 }
 \examples{
 # This example will access the Internet to get the data and will not work offline
-kommuner <- sers_data_vix_kommuner("Västra Götalands län")
+kommuner <- sers_data_vix_kommuner("Västra Götaland")
 kommuner
 }

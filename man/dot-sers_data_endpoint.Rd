@@ -21,3 +21,4 @@ Internal function to get the base request for the SERS API
 req <- .sers_data_endpoint("lan")
 }
 }
+\keyword{internal}

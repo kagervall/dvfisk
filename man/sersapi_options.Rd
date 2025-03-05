@@ -14,8 +14,7 @@ Set or get options for the \code{sersapi} package
 }
 \section{Supported options}{
 
-Usually you only need to change \code{root_folder} but it is possible to also change file names
-if needed. Supported keys:
+Supported keys:
 \itemize{
 \item{\code{base_url} Base URL for the API (Default: "https://dvfisk.slu.se/api/V1/sers/data-vix")}
 }

@@ -1,6 +1,4 @@
-# sersapi <img src="man/figures/logo.png" align="right" height="139" alt="" />
-
-# Query and Get Data from SERS
+# sersapi: Query and Get Data from SERS <img src="man/figures/logo.png" align="right" height="139" alt="" />
 
 Package `sersapi` gives easy access to the Swedish Electrofishing Register (SERS).
 

@@ -3,7 +3,7 @@
 \docType{data}
 \name{sites}
 \alias{sites}
-\title{sersapi::sites A sf points data frame with information about electrofishing sites in SERS}
+\title{dvfisk::sites A sf points data frame with information about electrofishing sites in SERS}
 \format{
 A data frame with 23 variables:
 \describe{

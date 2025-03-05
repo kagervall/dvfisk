@@ -2,7 +2,7 @@
 imgurl <- "inst/figures/slu_logo.png"
 s <- hexSticker::sticker(imgurl, s_x = 1.03, s_y = .9, s_width = .5,
                          h_size = 2,
-             package="sersapi", p_size = 20, p_y = 1.6,
+             package="dvfisk", p_size = 20, p_y = 1.6,
              h_fill =  "#888B8D", h_color = "#672146",
              filename="inst/figures/hexsticker.png")
 

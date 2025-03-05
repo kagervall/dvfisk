@@ -1,4 +1,8 @@
-#' Internal function to get the base request for the SERS API
+#####
+# This file contains the functions to access the SersVix API.
+#####
+
+#' Internal function to get the base request for the SersVix API
 #'
 #' @param one of "lan", "kommuner", "huvudavrinningsomraden", "rapport", the defined
 #' endpoints in the SersVix API
@@ -9,15 +13,15 @@
 #' @keywords internal
 #' @examples
 #' \dontrun{
-#' req <- .sers_data_endpoint("lan")
+#' req <- .SersVix_endpoint("lan")
 #' }
-.sers_data_endpoint <-function(what) {
+.SersVix_endpoint <-function(what) {
   allowed <- c("lan", "kommuner", "huvudavrinningsomraden", "rapport")
   if (!what %in% allowed) {
-    stop("Internal error in package sersapi 'what' parameter. Must be one of: ", paste(allowed, collapse = ", "))
+    stop("Internal error in package dvfisk 'what' parameter. Must be one of: ", paste(allowed, collapse = ", "))
   }
-  base_url <- sersapi_options()$base_url
-  url <- paste0(base_url, "/", what)
+  SersVix_url <- dvfisk_options()$SersVix_url
+  url <- paste0(SersVix_url, "/", what)
   req <- httr2::request(url)
   return(req)
 }
@@ -36,7 +40,7 @@
 #' counties <- sers_data_vix_lan()
 #' counties
 sers_data_vix_lan <- function() {
-  req <- .sers_data_endpoint("lan")
+  req <- .SersVix_endpoint("lan")
   resp <- httr2::req_perform(req)
   body <- httr2::resp_body_json(resp, simplifyVector = TRUE)
   return(body)
@@ -59,7 +63,7 @@ sers_data_vix_lan <- function() {
 #' kommuner <- sers_data_vix_kommuner("Västra Götaland")
 #' kommuner
 sers_data_vix_kommuner <- function(lan) {
-  req <- .sers_data_endpoint("kommuner") |>
+  req <- .SersVix_endpoint("kommuner") |>
     httr2::req_url_query(lan = lan)
   resp <- httr2::req_perform(req)
   body <- httr2::resp_body_json(resp, simplifyVector = TRUE)
@@ -81,7 +85,7 @@ sers_data_vix_kommuner <- function(lan) {
 #' head(huvudavrinningsomraden)
 #'
 sers_data_vix_huvudavrinningsomraden <- function() {
-  req <- .sers_data_endpoint("huvudavrinningsomraden")
+  req <- .SersVix_endpoint("huvudavrinningsomraden")
   resp <- httr2::req_perform(req)
   body <- httr2::resp_body_json(resp, simplifyVector = TRUE)
   return(body)
@@ -116,7 +120,7 @@ sers_data_vix_huvudavrinningsomraden <- function() {
 #' dim(data)
 sers_data_vix_rapport <- function(lan = NULL, kommun = NULL, haroNr = NULL,
                                   startdatum = NULL, slutdatum = NULL) {
-  req <- .sers_data_endpoint("rapport")
+  req <- .SersVix_endpoint("rapport")
   if (is.null(lan) & is.null(kommun) & is.null(haroNr) &
       is.null(startdatum) & is.null(slutdatum)) {
     stop("You must provide at least one of the following parameters: lan, kommun, haroNr, startdatum, slutdatum")

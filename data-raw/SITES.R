@@ -33,7 +33,7 @@ cat(paste0("#'   \\item{", sites_documentation$Rubrik, "}{", sites_documentation
 cat("#' }
 #' @source
 #'    Swedish Electrofishing Register (SERS)
-#'    \\url{https://www.slu.se/institutioner/akvatiska-resurser/databaser/elfiskeregistret/}
+#'    \\url{https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-testfishing-in-streams/}
 \"sites\"",
     file = sites_doc, append = TRUE)
 devtools::document()

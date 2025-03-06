@@ -12,7 +12,7 @@ sites_documentation <- readxl::read_excel(path = sites_tmp,
                                           sheet = "Information",
                                           skip = 5)
 
-sites <- sf::st_as_sf(sites, coords = c("DDLONG","DDLAT"), crs = 4326)
+#sites <- sf::st_as_sf(sites, coords = c("DDLONG","DDLAT"), crs = 4326)
 usethis::use_data(sites, overwrite = TRUE)
 ## Create documentation
 sites_doc <- "R/SITES_documentation.R"

@@ -4,7 +4,7 @@
 
 #' Internal function to get the base request for the SersVix API
 #'
-#' @param one of "lan", "kommuner", "huvudavrinningsomraden", "rapport", the defined
+#' @param what one of "lan", "kommuner", "huvudavrinningsomraden", "rapport", the defined
 #' endpoints in the SersVix API
 #'
 #' @returns

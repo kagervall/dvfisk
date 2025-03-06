@@ -1,6 +1,6 @@
 Package: dvfisk
 Type: Package
-Title: Query and Get Data From wedish Electrofishing Register (SERS)
+Title: Query and Get Data From various API:s at https://dvfisk.slu.se
 Version: 0.1.0
 Authors@R: person(
     "Anders", "Kagervall",

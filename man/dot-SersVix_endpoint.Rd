@@ -7,7 +7,7 @@
 .SersVix_endpoint(what)
 }
 \arguments{
-\item{one}{of "lan", "kommuner", "huvudavrinningsomraden", "rapport", the defined
+\item{what}{one of "lan", "kommuner", "huvudavrinningsomraden", "rapport", the defined
 endpoints in the SersVix API}
 }
 \value{

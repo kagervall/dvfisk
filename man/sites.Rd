@@ -3,9 +3,10 @@
 \docType{data}
 \name{sites}
 \alias{sites}
-\title{dvfisk::sites A sf points data frame with information about electrofishing sites in SERS}
+\alias{sites_sf}
+\title{dvfisk::sites A data frame with information about electrofishing sites in SERS}
 \format{
-A data frame with 23 variables:
+Columns in \code{dvfisk::sites} are:
 \describe{
 \item{LAN}{Länen kodas 1 till 25 (Stockholms till Norrbottens län).}
 \item{HFLODOMR}{Huvudflodområdesnummer enligt SMHI:s numrering (Vattendragsregistret).}
@@ -32,6 +33,8 @@ A data frame with 23 variables:
 \item{DDLAT}{Latitud för elfiskelokalen (WGS84) för elfiskelokalens nedersta punkt. Obs. ska ej anges på elfiskeprotokoll!}
 \item{DDLONG}{Latitud för elfiskelokalen (WGS84) för elfiskelokalens nedersta punkt. Obs. ska ej anges på elfiskeprotokoll!}
 }
+
+An object of class \code{sf} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 21749 rows and 3 columns.
 }
 \source{
 Swedish Electrofishing Register (SERS)
@@ -39,10 +42,18 @@ Swedish Electrofishing Register (SERS)
 }
 \usage{
 sites
+
+sites_sf
 }
 \description{
 Data from the Swedish Electrofishing Register (SERS) containing information about electrofishing sites.
-The geographical coordinates are in the WGS84 coordinate reference system.
 The documentation is based on the Excel file provided by SLU and avaliable in Swedish only.
+
+Data frame \code{dvfisk::sites} is a list of sites defined in SERS  with 23
+variables described below.
+
+\code{dvfisk::sites_sf} is a simple feature points object for the sites in \code{dvfisk::sites}
+use \code{dplyr::left_join(sites, sites_sf, by = dplyr::join_by(XKOORLOK, YKOORLOK))}
+to join the data frames.
 }
 \keyword{datasets}

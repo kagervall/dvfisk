@@ -12,8 +12,8 @@ To learn more about \code{dvfisk}, start with the vignettes:
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/kagervall/sersapi}
-  \item Report bugs at \url{https://github.com/kagervall/sersapi/issues}
+  \item \url{https://github.com/kagervall/dvfisk}
+  \item Report bugs at \url{https://github.com/kagervall/dvfisk/issues}
 }
 
 }

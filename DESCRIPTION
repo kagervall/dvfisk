@@ -8,13 +8,13 @@ Authors@R: person(
     email = "anders.kagervall@slu.se",
     comment = c(ORCID = "0000-0003-4790-2696")
   )
-Description: Query and Get Data From wedish Electrofishing Register (SERS)
-  Uses the webapi at https://dvfisk.slu.se/swagger/index.html
+Description: Query and get gata grom Swedish electrofishing register (SERS).
+    Uses the webapi at <https://dvfisk.slu.se/swagger/index.html>.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
-URL: https://github.com/kagervall/sersapi
-BugReports: https://github.com/kagervall/sersapi/issues
+URL: https://github.com/kagervall/dvfisk
+BugReports: https://github.com/kagervall/dvfisk/issues
 Imports: 
     httr2,
     settings

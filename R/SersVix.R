@@ -37,9 +37,9 @@
 #'
 #' @examples
 #' # This example will access the Internet to get the data and will not work offline
-#' counties <- sers_data_vix_lan()
+#' counties <- sers_vix_lan()
 #' counties
-sers_data_vix_lan <- function() {
+sers_vix_lan <- function() {
   req <- .SersVix_endpoint("lan")
   resp <- httr2::req_perform(req)
   body <- httr2::resp_body_json(resp, simplifyVector = TRUE)
@@ -60,9 +60,9 @@ sers_data_vix_lan <- function() {
 #'
 #' @examples
 #' # This example will access the Internet to get the data and will not work offline
-#' kommuner <- sers_data_vix_kommuner("Västra Götaland")
+#' kommuner <- sers_vix_kommuner("Västra Götaland")
 #' kommuner
-sers_data_vix_kommuner <- function(lan) {
+sers_vix_kommuner <- function(lan) {
   req <- .SersVix_endpoint("kommuner") |>
     httr2::req_url_query(lan = lan)
   resp <- httr2::req_perform(req)
@@ -81,10 +81,10 @@ sers_data_vix_kommuner <- function(lan) {
 #'
 #' @examples
 #' # This example will access the Internet to get the data and will not work offline
-#' huvudavrinningsomraden <- sers_data_vix_huvudavrinningsomraden()
+#' huvudavrinningsomraden <- sers_vix_huvudavrinningsomraden()
 #' head(huvudavrinningsomraden)
 #'
-sers_data_vix_huvudavrinningsomraden <- function() {
+sers_vix_huvudavrinningsomraden <- function() {
   req <- .SersVix_endpoint("huvudavrinningsomraden")
   resp <- httr2::req_perform(req)
   body <- httr2::resp_body_json(resp, simplifyVector = TRUE)
@@ -115,10 +115,10 @@ sers_data_vix_huvudavrinningsomraden <- function() {
 #' @examples
 #' # This example will access the Internet to get the data and will not work offline
 #' # Get all data from the main drainage area 86000 (Mörrumsån) in 2021
-#' data <- sers_data_vix_rapport(haroNr = 86000, startdatum = "2021-01-01", slutdatum = "2021-12-31")
+#' data <- sers_vix_rapport(haroNr = 86000, startdatum = "2021-01-01", slutdatum = "2021-12-31")
 #' head(data)
 #' dim(data)
-sers_data_vix_rapport <- function(lan = NULL, kommun = NULL, haroNr = NULL,
+sers_vix_rapport <- function(lan = NULL, kommun = NULL, haroNr = NULL,
                                   startdatum = NULL, slutdatum = NULL) {
   req <- .SersVix_endpoint("rapport")
   if (is.null(lan) & is.null(kommun) & is.null(haroNr) &

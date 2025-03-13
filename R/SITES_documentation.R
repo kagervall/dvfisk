@@ -10,34 +10,35 @@
 #'
 #' `dvfisk::sites_sf` is a simple feature points object for the sites in `dvfisk::sites`
 #' use `dplyr::left_join(sites, sites_sf, by = dplyr::join_by(XKOORLOK, YKOORLOK))`
-#' to join the data frames.
-
+#' to join the data frames. You might want to use `library(sf)` in your script to
+#' work with the simple feature object.
+#'
 #' @format Columns in `dvfisk::sites` are:
 #' \describe{
-#'   \item{LAN}{Länen kodas 1 till 25 (Stockholms till Norrbottens län).}
-#'   \item{HFLODOMR}{Huvudflodområdesnummer enligt SMHI:s numrering (Vattendragsregistret).}
-#'   \item{BIFLNR}{Biflödesnummer enligt SMHI (Vattendragsregistret).}
-#'   \item{VDRAGNAM}{Vattendragets namn.}
-#'   \item{XKOORVDR}{Vattendragets mynningskoordinat i X-led (nord-syd) enligt SMHI (Vattendragsregistret).}
-#'   \item{YKOORVDR}{Vattendragets mynningskoordinat i Y-led (väst-öst) enligt SMHI (Vattendragsregistret).}
-#'   \item{LOKALNAM}{Elfiskelokalens namn}
-#'   \item{LOKALNR}{Elfiskelokalens nummer (om blankt saknas lokalnummer för aktuell elfiskelokal).}
-#'   \item{XKOORLOK}{X-koordinat (nord-syd; sexsiffrig RT90, 2.5 gon väst) för elfiskelokalens nedersta punkt.}
-#'   \item{YKOORLOK}{Y-koordinat (väst-öst; sexsiffrig RT90, 2.5 gon väst) för elfiskelokalens nedersta punkt.}
-#'   \item{HOH}{Höjd över havet i meter.}
-#'   \item{AVRIOMRK}{Avrinningsområdets storlek uppströms elfiskelokalen (km2). Anges enbart i fyra klasser  (<10, <100, <1000 resp >1000).}
-#'   \item{ANDSJOPR}{Andelen sjöar i % av avrinningsområdet uppströms elfiskelokalen. Anges enbart i fyra klasser (<1, <5, <10, >10).}
-#'   \item{AVSTUPP}{Avstånd (km) till uppströms sjö eller större sel (lugnparti) om minst 1 hektar i huvudfåran.}
-#'   \item{AVSTNER}{Avstånd (km) till nedströms sjö eller större sel (lugnparti) om minst 1 hektar i huvudfåran.}
-#'   \item{KOMMUNNR}{Anger vilken kommun som elfiskelokalen ligger i enligt SCB.}
-#'   \item{KOMMUN}{Namn på kommunen där elfiskelokalen är lokaliserad.}
-#'   \item{TOPOKART}{Här anges vilken topografisk karta elfiskelokalen ligger på, ex 10B SO. Lämnas tomt om ej angivet.}
-#'   \item{X_RT90_SJU}{X-koordinat (nord-syd; sjusiffrig RT90, 2.5 gon väst) för elfiskelokalens nedersta punkt.}
-#'   \item{Y_RT90_SJU}{Y-koordinat (väst-öst; sjusiffrig RT90, 2.5 gon väst) för elfiskelokalens nedersta punkt.}
-#'   \item{S99TM_N}{Koordinat (nord-syd, Sweref99 TM) för elfiskelokalens nedersta punkt. Obs. ska ej anges på elfiskeprotokoll!}
-#'   \item{S99TM_E}{Koordinat (väst-öst, Sweref99 TM) för elfiskelokalens nedersta punkt. Obs. ska ej anges på elfiskeprotokoll!}
-#'   \item{DDLAT}{Latitud för elfiskelokalen (WGS84) för elfiskelokalens nedersta punkt. Obs. ska ej anges på elfiskeprotokoll!}
-#'   \item{DDLONG}{Latitud för elfiskelokalen (WGS84) för elfiskelokalens nedersta punkt. Obs. ska ej anges på elfiskeprotokoll!}
+#'   \item{lan}{Länen kodas 1 till 25 (Stockholms till Norrbottens län).}
+#'   \item{hflodomr}{Huvudflodområdesnummer enligt SMHI:s numrering (Vattendragsregistret).}
+#'   \item{biflnr}{Biflödesnummer enligt SMHI (Vattendragsregistret).}
+#'   \item{vdragnam}{Vattendragets namn.}
+#'   \item{xkoorvdr}{Vattendragets mynningskoordinat i X-led (nord-syd) enligt SMHI (Vattendragsregistret).}
+#'   \item{ykoorvdr}{Vattendragets mynningskoordinat i Y-led (väst-öst) enligt SMHI (Vattendragsregistret).}
+#'   \item{lokalnam}{Elfiskelokalens namn}
+#'   \item{lokalnr}{Elfiskelokalens nummer (om blankt saknas lokalnummer för aktuell elfiskelokal).}
+#'   \item{xkoorlok}{X-koordinat (nord-syd; sexsiffrig RT90, 2.5 gon väst) för elfiskelokalens nedersta punkt.}
+#'   \item{ykoorlok}{Y-koordinat (väst-öst; sexsiffrig RT90, 2.5 gon väst) för elfiskelokalens nedersta punkt.}
+#'   \item{hoh}{Höjd över havet i meter.}
+#'   \item{avriomrk}{Avrinningsområdets storlek uppströms elfiskelokalen (km2). Anges enbart i fyra klasser  (<10, <100, <1000 resp >1000).}
+#'   \item{andsjopr}{Andelen sjöar i % av avrinningsområdet uppströms elfiskelokalen. Anges enbart i fyra klasser (<1, <5, <10, >10).}
+#'   \item{avstupp}{Avstånd (km) till uppströms sjö eller större sel (lugnparti) om minst 1 hektar i huvudfåran.}
+#'   \item{avstner}{Avstånd (km) till nedströms sjö eller större sel (lugnparti) om minst 1 hektar i huvudfåran.}
+#'   \item{kommunnr}{Anger vilken kommun som elfiskelokalen ligger i enligt SCB.}
+#'   \item{kommun}{Namn på kommunen där elfiskelokalen är lokaliserad.}
+#'   \item{topokart}{Här anges vilken topografisk karta elfiskelokalen ligger på, ex 10B SO. Lämnas tomt om ej angivet.}
+#'   \item{x_rt90_sju}{X-koordinat (nord-syd; sjusiffrig RT90, 2.5 gon väst) för elfiskelokalens nedersta punkt.}
+#'   \item{y_rt90_sju}{Y-koordinat (väst-öst; sjusiffrig RT90, 2.5 gon väst) för elfiskelokalens nedersta punkt.}
+#'   \item{s99tm_n}{Koordinat (nord-syd, Sweref99 TM) för elfiskelokalens nedersta punkt. Obs. ska ej anges på elfiskeprotokoll!}
+#'   \item{s99tm_e}{Koordinat (väst-öst, Sweref99 TM) för elfiskelokalens nedersta punkt. Obs. ska ej anges på elfiskeprotokoll!}
+#'   \item{ddlat}{Latitud för elfiskelokalen (WGS84) för elfiskelokalens nedersta punkt. Obs. ska ej anges på elfiskeprotokoll!}
+#'   \item{ddlong}{Latitud för elfiskelokalen (WGS84) för elfiskelokalens nedersta punkt. Obs. ska ej anges på elfiskeprotokoll!}
 #' }
 #' @source
 #'    Swedish Electrofishing Register (SERS)

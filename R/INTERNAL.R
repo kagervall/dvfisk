@@ -41,7 +41,8 @@
 #' @returns a data.frame with the body of the request
 #' @keywords internal
 #'
-#' @examples#' \dontrun{
+#' @examples
+#' \dontrun{
 #' body <- .dvfisk_get_body(req)
 #' }
 .dvfisk_get_body <- function(req) {

@@ -16,7 +16,7 @@ a data.frame with the body of the request
 Internal function that returns the body of a request
 }
 \examples{
-#' \dontrun{
+\dontrun{
 body <- .dvfisk_get_body(req)
 }
 }

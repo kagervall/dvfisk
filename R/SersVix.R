@@ -1,4 +1,4 @@
-#####
+#####}
 # This file contains the functions to access the SersVix API.
 #####
 
@@ -9,8 +9,11 @@
 #' A vector of type character containing names of counties (län) known in the SERS database
 #' @export
 #'
-#' @seealso
-#' \url{https://dvfisk.slu.se/swagger/index.html}
+#' @family SersVix API functions
+#'
+#' @seealso Description of
+#'  \url{https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-testfishing-in-streams/},
+#'  description of API \url{https://dvfisk.slu.se/swagger/index.html}
 #'
 #' @examples
 #' # This example will access the Internet to get the data and will not work offline
@@ -34,6 +37,11 @@ sers_vix_lan <- function() {
 #' A vector of type character containing names of municipalities (kommuner) in the county (län)
 #' @export
 #'
+#' @family SersVix API functions
+#'
+#' @seealso Description of \url{https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-testfishing-in-streams/},
+#'  description of API \url{https://dvfisk.slu.se/swagger/index.html}
+#'
 #' @examples
 #' # This example will access the Internet to get the data and will not work offline
 #' kommuner <- sers_vix_kommuner("Västra Götaland")
@@ -53,6 +61,11 @@ sers_vix_kommuner <- function(lan) {
 #' A data frame with columns `haroNr` and `huvudavrinningsomrade` with the main
 #' drainage areas (huvudavrinningsområden) in Sweden
 #' @export
+#'
+#' @family SersVix API functions
+#'
+#' @seealso Description of \url{https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-testfishing-in-streams/},
+#'  description of API \url{https://dvfisk.slu.se/swagger/index.html}
 #'
 #' @examples
 #' # This example will access the Internet to get the data and will not work offline
@@ -86,6 +99,11 @@ sers_vix_huvudavrinningsomraden <- function() {
 #' A data frame with the electrofishing data. There are 244 columns in the data frame
 #' consult SERS-documentation.
 #' @export
+#'
+#' @family SersVix API functions
+#'
+#' @seealso Description of \url{https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-testfishing-in-streams/},
+#'  description of API \url{https://dvfisk.slu.se/swagger/index.html}
 #'
 #' @examples
 #' # This example will access the Internet to get the data and will not work offline

@@ -42,3 +42,13 @@ data <- sers_vix_rapport(haroNr = 86000, startdatum = "2021-01-01", slutdatum = 
 head(data)
 dim(data)
 }
+\seealso{
+Description of \url{https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-testfishing-in-streams/},
+description of API \url{https://dvfisk.slu.se/swagger/index.html}
+
+Other SersVix API functions: 
+\code{\link{sers_vix_huvudavrinningsomraden}()},
+\code{\link{sers_vix_kommuner}()},
+\code{\link{sers_vix_lan}()}
+}
+\concept{SersVix API functions}

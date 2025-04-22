@@ -18,5 +18,13 @@ counties <- sers_vix_lan()
 counties
 }
 \seealso{
-\url{https://dvfisk.slu.se/swagger/index.html}
+Description of
+\url{https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-testfishing-in-streams/},
+description of API \url{https://dvfisk.slu.se/swagger/index.html}
+
+Other SersVix API functions: 
+\code{\link{sers_vix_huvudavrinningsomraden}()},
+\code{\link{sers_vix_kommuner}()},
+\code{\link{sers_vix_rapport}()}
 }
+\concept{SersVix API functions}

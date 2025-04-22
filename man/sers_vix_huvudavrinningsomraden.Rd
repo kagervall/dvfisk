@@ -19,3 +19,13 @@ huvudavrinningsomraden <- sers_vix_huvudavrinningsomraden()
 head(huvudavrinningsomraden)
 
 }
+\seealso{
+Description of \url{https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-testfishing-in-streams/},
+description of API \url{https://dvfisk.slu.se/swagger/index.html}
+
+Other SersVix API functions: 
+\code{\link{sers_vix_kommuner}()},
+\code{\link{sers_vix_lan}()},
+\code{\link{sers_vix_rapport}()}
+}
+\concept{SersVix API functions}

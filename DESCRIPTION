@@ -15,7 +15,7 @@ Description: Query and get gata from the Swedish databases KUL, NORS and SERS
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
-URL: https://github.com/kagervall/dvfisk
+URL: https://kagervall.github.io/dvfisk, https://github.com/kagervall/dvfisk
 BugReports: https://github.com/kagervall/dvfisk/issues
 Imports: 
     httr2,

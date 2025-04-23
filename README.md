@@ -7,7 +7,13 @@ can be found on <https://dvfisk.slu.se/swagger/index.html>
 
 ##  Swedish Electrofishing Register (SERS)
 
-R API:s available for SERS: *SersAggregerad* (TBA) and *SersVix* (beta).
+R API:s available for SERS: *SersAggregerad* (beta) and *SersVix* (beta).
+
+SersAggregerad is a summary of the data in SERS with aggregated data on the for 
+all years a site has been fished. SersVix is a return of the data for individual
+sites with estimates for the density of all species caught and lots of information
+about the site and the fishing.
+
 
 Information about Swedish Electrofishing Register (SERS) is available at <https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-testfishing-in-streams/>
 

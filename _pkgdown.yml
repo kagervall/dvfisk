@@ -1,3 +1,5 @@
+template:
+  bootstrap: 5
 reference:
 - title: SersAggregated
   desc:  Functions for the SersAggregated API

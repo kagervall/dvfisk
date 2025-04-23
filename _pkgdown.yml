@@ -1,0 +1,16 @@
+reference:
+- title: SersAggregated
+  desc:  Functions for the SersAggregated API
+- contents:
+  - has_concept("SersAggregerad API functions")
+- title: SersVix
+  desc:  Functions for the SersVix API
+- contents:
+    - has_concept("SersVix API functions")
+- title: Data
+  desc:  Built-in datasets
+- contents:
+  - has_concept("Datasets")
+- title: Options
+  desc:  Functions to configure the package
+- contents: dvfisk_options

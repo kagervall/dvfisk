@@ -22,5 +22,9 @@ head(huvudavrinningsomraden)
 \seealso{
 Description of \url{https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-testfishing-in-streams/},
 description of API \url{https://dvfisk.slu.se/swagger/index.html}
+
+Other SersAggregerad API functions: 
+\code{\link{sers_aggregerad_lan}()},
+\code{\link{sers_aggregerad_rapport}()}
 }
-\concept{Sersaggregerad API functions}
+\concept{SersAggregerad API functions}

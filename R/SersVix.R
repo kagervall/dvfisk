@@ -84,7 +84,7 @@ sers_vix_huvudavrinningsomraden <- function() {
 #'
 #' This function returns electrofishing data from the SERS API. You can filter the data by
 #' county (lan), municipality (kommun), main drainage area (haroNr), start date (startdatum)
-#' and end date (slutdatum). You must provide at least one of theparameters. The function
+#' and end date (slutdatum). You must provide at least one of the parameters. The function
 #' does not check if the parameters are valid and it is possible to give combinations
 #' that does not make sense, e.g. a `haroNr` and `lan` that does not intersect.
 #' It is also possible send requests that return a lot of data, so be careful.

@@ -48,8 +48,8 @@ cat("#' }
 #'    Swedish Electrofishing Register (SERS)
 #'    \\url{https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-testfishing-in-streams/}
 \"sites\"
-#
-# Document sites_sf in same man page as sites
+#'
+#' @family Datasets
 #' @rdname sites
 \"sites_sf\"
 ",  file = sites_doc, append = TRUE)

@@ -23,6 +23,7 @@ Description of
 description of API \url{https://dvfisk.slu.se/swagger/index.html}
 
 Other SersAggregerad API functions: 
+\code{\link{sers_aggregerad_huvudavrinningsomraden}()},
 \code{\link{sers_aggregerad_rapport}()}
 }
 \concept{SersAggregerad API functions}

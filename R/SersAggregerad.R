@@ -35,7 +35,7 @@ sers_aggregerad_lan <- function() {
 #' drainage areas (huvudavrinningsområden) in Sweden
 #' @export
 #'
-#' @family Sersaggregerad API functions
+#' @family SersAggregerad API functions
 #'
 #' @seealso Description of \url{https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-testfishing-in-streams/},
 #'  description of API \url{https://dvfisk.slu.se/swagger/index.html}

@@ -57,4 +57,5 @@ use \code{dplyr::left_join(sites, sites_sf, by = dplyr::join_by(XKOORLOK, YKOORL
 to join the data frames. You might want to use \code{library(sf)} in your script to
 work with the simple feature object.
 }
+\concept{Datasets}
 \keyword{datasets}

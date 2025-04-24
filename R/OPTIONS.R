@@ -5,6 +5,8 @@
 # Variable, global to package's namespace.
 # This function is not exported to user space and does not need to be documented.
 OPTIONS <- settings::options_manager(
+  KulFangst_url ="https://dvfisk.slu.se/api/V1/kul/fangst",
+  KulFangst_endpoints = c("lan", "lokaler", "fisken", "ar", "rapport"),
   SersVix_url = "https://dvfisk.slu.se/api/V1/sers/data-vix",
   SersVix_endpoints = c("lan", "kommuner", "huvudavrinningsomraden", "rapport"),
   SersAggregerad_url = "https://dvfisk.slu.se/api/V1/sers/data-aggregerad",

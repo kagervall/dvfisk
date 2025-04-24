@@ -1,6 +1,10 @@
 template:
   bootstrap: 5
 reference:
+- title: KulFangst
+  desc:  Functions for the KulFangst API
+- contents:
+  - has_concept("KulFangst API functions")
 - title: SersAggregated
   desc:  Functions for the SersAggregated API
 - contents:

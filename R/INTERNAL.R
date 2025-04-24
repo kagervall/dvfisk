@@ -17,7 +17,7 @@
 #' req <- .dvfiskendpoint("SersVix", "lan")
 #' }
 .dvfisk_endpoint <-function(what, endpoint) {
-  known_apis <- c("SersVix", "SersAggregerad")
+  known_apis <- c("KulFangst", "SersVix", "SersAggregerad")
   if (!what %in% known_apis) {
     stop("Internal error in package dvfisk 'what' parameter. Must be one of: ", paste(known_apis, collapse = ", "))
   }

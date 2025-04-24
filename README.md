@@ -2,18 +2,15 @@
 
 Package `dvfisk` gives API access to databases maintained by [SLU Aqua](https://www.slu.se/en/departments/aquatic-resources1/ "Link to SLU Aqua").
 
-Link to dvfisk main page: <https://dvfisk.slu.se/>. Documentation for API:s provided on <https://dvfisk.slu.se/>
-can be found on <https://dvfisk.slu.se/swagger/index.html>
+Link to dvfisk main page: <https://dvfisk.slu.se/>. Documentation for API:s provided on <https://dvfisk.slu.se/> can be found on <https://dvfisk.slu.se/swagger/index.html>
 
-##  Swedish Electrofishing Register (SERS)
+## Swedish Electrofishing Register (SERS)
 
-R API:s available for SERS: *SersAggregerad* (beta) and *SersVix* (beta).
+R API:s available for SERS: **SersAggregerad** (beta) and **SersVix** (beta).
 
-SersAggregerad is a summary of the data in SERS with aggregated data on the for 
-all years a site has been fished. SersVix is a return of the data for individual
-sites with estimates for the density of all species caught and lots of information
+SersAggregerad gives you aggregated data for all years a site has been fished. SersVix returns of the data for
+individual sites for each year fished with estimates for the density of all species caught and lots of information
 about the site and the fishing.
-
 
 Information about Swedish Electrofishing Register (SERS) is available at <https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-testfishing-in-streams/>
 

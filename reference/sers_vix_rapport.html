@@ -17,7 +17,7 @@ It is also possible send requests that return a lot of data, so be careful."><me
 
     <a class="navbar-brand me-2" href="../index.html">dvfisk</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.2</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -106,205 +106,205 @@ description of API <a href="https://dvfisk.slu.se/swagger/index.html" class="ext
 <span class="r-in"><span><span class="co"># Get all data from the main drainage area 86000 (Mörrumsån) in 2021</span></span></span>
 <span class="r-in"><span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu">sers_vix_rapport</span><span class="op">(</span>haroNr <span class="op">=</span> <span class="fl">86000</span>, startdatum <span class="op">=</span> <span class="st">"2021-01-01"</span>, slutdatum <span class="op">=</span> <span class="st">"2021-12-31"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>        län länskod harO_NR huvudavrinningsområde hflodomr biflnr    vattendrag</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 Blekinge      10   86000             Mörrumsån      086      0     Mörrumsån</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2 Blekinge      10   86000             Mörrumsån      086      S Bjällerbäcken</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3 Blekinge      10   86000             Mörrumsån      086      0     Mörrumsån</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4 Blekinge      10   86000             Mörrumsån      086      0     Mörrumsån</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5 Blekinge      10   86000             Mörrumsån      086      0     Mörrumsån</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6 Blekinge      10   86000             Mörrumsån      086      0     Mörrumsån</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   xkoorvdr ykoorvdr              lokal lokalnr  rT90_X  rT90_Y swereF99_TM_N</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1   622563   143423     Fotbollsplan S         6252940 1429620       6250537</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2   622563   143423         Ladugården         6253746 1429368       6251340</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3   622563   143423 Pool 1 laxodlingen         6229800 1434450       6227466</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4   622563   143423       Pool 19 övre         6230700 1434350       6228364</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5   622563   143423            Flacket         6231992 1434841       6229661</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6   622563   143423          Rosendala         6232350 1434850       6230019</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   swereF99_TM_E fiskedatum  syfte artantal abbor asp benlö bjöna besim stesi</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1        479349   20210831 Nö-lax        6     0   0   0.0     0  17.9     0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2        479088   20210816    Nap        4     0   0   0.0     0   0.0     2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3        484447   20210908 Nö-lax        7     0   0   0.8     0   0.0     0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4        484337   20210901 Nö-lax        7     0   0   0.0     0   0.0     0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5        484812   20210830   Uppf        7     0   0   1.3     0   0.0     0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6        484817   20210901 Nö-lax        3     0   0   0.0     0   0.0     0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   simpa hosim braxe bäcne flone havne nejonöga bäcrö0 bäcrö bäcrötot bäcrömax</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1     0     0     0     0     0     0      0.0      0     0        0       NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2     0     0     0     0     0     0      0.0      0     0        0       NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3     0     0     0     0     0     0      0.0      0     0        0       NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4     0     0     0     0     0     0      1.9      0     0        0       NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5     0     0     0     0     0     0      2.8      0     0        0       NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6     0     0     0     0     0     0      0.0      0     0        0       NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   bäcrömin bäCRmax0 bäcröxö0 bäcröxör bäcröxöt bäCXömax bäCXömin bäCXömx0 elrit</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1       NA       NA        0        0        0       NA       NA       NA   1.5</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2       NA       NA        0        0        0       NA       NA       NA   5.4</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3       NA       NA        0        0        0       NA       NA       NA  93.6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4       NA       NA        0        0        0       NA       NA       NA 172.2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5       NA       NA        0        0        0       NA       NA       NA 146.9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6       NA       NA        0        0        0       NA       NA       NA  32.2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   flodkräf signkräf kräfta färna gers grolö grönl gädda gös harr0 harr harrtot</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1        0      0.0      0   0.0    0     0     0   0.0   0     0    0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2        0      2.3      0   0.0    0     0     0   0.0   0     0    0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3        0      0.0      0   0.0    0     0     0   0.8   0     0    0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4        0      0.0      0  13.8    0     0     0   0.0   0     0    0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5        0      0.0      0   2.9    0     0     0   0.0   0     0    0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6        0      0.0      0   0.0    0     0     0   0.0   0     0    0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   harrmax harrmin harrmax0 id kanrö0 kanrö kanrötot lake  lax0  lax laxtot</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1      NA      NA       NA  0      0     0        0    0   5.4  0.0    5.4</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2      NA      NA       NA  0      0     0        0    0   0.0  0.0    0.0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3      NA      NA       NA  0      0     0        0    0  50.8 10.2   61.0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4      NA      NA       NA  0      0     0        0    0  96.0  7.7  103.7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5      NA      NA       NA  0      0     0        0    0  34.5  0.0   34.5</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6      NA      NA       NA  0      0     0        0    0 137.2 14.1  151.3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   laxmax laxmin laxmax0 lax0ber laxber lax0pval laxpval laxfisk0 laxfisk</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1     85     70      85       3     -9     0.95    0.00        0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2     NA     NA      NA      NA     NA       NA    0.00        0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3    115     55      90       3      1     0.83    0.91        0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4    130     40      90       3      3     0.87    0.96        0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5     70     40      70       3     -9     0.82    0.00        0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6    125     45      80       3      3     0.83    0.97        0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   laxfixto laxfimax laxfimin laxfmax0 laxör0 laxör laxörTOT laxörmax laxörmin</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1        0       NA       NA       NA    0.7     0      0.7       70       70</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2        0       NA       NA       NA    0.0     0      0.0       NA       NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3        0       NA       NA       NA    0.0     0      0.0       NA       NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4        0       NA       NA       NA    1.5     0      1.5       60       60</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5        0       NA       NA       NA    0.0     0      0.0       NA       NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6        0       NA       NA       NA    1.0     0      1.0       70       70</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   mal karp mört nissö nors regnb0 regnb regnbtot regnmax0 rödin0 rödin rödintot</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1   0    0  0.7     0    0      0     0        0       NA      0     0        0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2   0    0  0.0     0    0      0     0        0       NA      0     0        0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3   0    0  0.7     0    0      0     0        0       NA      0     0        0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4   0    0  0.0     0    0      0     0        0       NA      0     0        0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5   0    0  0.0     0    0      0     0        0       NA      0     0        0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6   0    0  0.0     0    0      0     0        0       NA      0     0        0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   rödinmax rödinmin rödimax0 ruda sankr sarv sik siklö skrub rödsp småsp spigg</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1       NA       NA       NA    0     0    0   0     0     0     0     0     0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2       NA       NA       NA    0     2    0   0     0     0     0     0     0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3       NA       NA       NA    0     0    0   0     0     0     0     0     0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4       NA       NA       NA    0     0    0   0     0     0     0     0     0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5       NA       NA       NA    0     0    0   0     0     0     0     0     0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6       NA       NA       NA    0     0    0   0     0     0     0     0     0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   stosp stäm sutar vimma  ål ålmax ålmin öring0 öring öringtot öringmax</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1     0    0     0     0 0.0    NA    NA   25.6   9.1     34.7      115</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2     0    0     0     0 0.0    NA    NA    0.0   0.0      0.0       NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3     0    0     0     0 0.7   200   200    7.9   0.0      7.9       90</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4     0    0     0     0 0.0    NA    NA    6.0   0.0      6.0       80</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5     0    0     0     0 0.0    NA    NA    1.3   0.0      1.3       75</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6     0    0     0     0 0.0    NA    NA    0.0   0.0      0.0       NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   öringmin örinmax0 örin0ber öringber öri0pval örinpval sanst lerst smsmörb</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1       60       95        3        3     0.92     0.89     0     0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2       NA       NA       NA       NA     0.00     0.00     0     0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3       60       90        3       -9     1.00     0.00     0     0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4       60       80        1       -9     0.86     0.00     0     0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5       75       75        3       -9     1.00     0.00     0     0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6       NA       NA       NA       NA     0.00     0.00     0     0       0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   utförare ansvarig fabrikat aggregat volt strstyrk pulsfrek antutfis metod</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1   Mörrum      Dcf    Lugab   Bensin  500      0.6       -9        3 Kvant</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2    Lst07    Lst07  Smith-r  Batteri  305      0.6        0        3 Kvant</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3   Mörrum      Dcf    Lugab   Bensin  500      0.6       -9        3 Kvant</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4   Mörrum      Dcf    Lugab   Bensin  500      0.6       -9        3 Kvant</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5   Mörrum   Mörrum    Lugab   Bensin  500      0.6       -9        3 Kvant</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6   Mörrum      Dcf    Lugab   Bensin  500      0.6       -9        3 Kvant</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   bredd langd lokalbre area avfiskbr medbredd medyta grumligh vtnfarg maxdjup</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  20.0  17.0      8.0  136        N     -9.0     -9        1       2    0.40</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2   2.3  50.0      2.3  108               2.5     -9        1       3    0.37</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  40.0  20.0      7.0  140        N     -9.0     -9        1       2    0.50</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  25.0  17.0      8.0  136        N     -9.0     -9        1       2    0.60</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5  40.0  11.4      6.8   78        N     -9.0     -9        1       2    0.60</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6  30.0  14.7      8.0  118        N     -9.0     -9        1       2    0.50</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   medeldju bottento substr1 substr2 substr3 vattenni vattenha vattente lufttemp</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1     0.20        2   Sten2   Sten1  Block1      Låg     Strö     16.6     14.6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2     0.22        1    Grus   Sten1    Sand      Med     Strö     14.9     17.0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3     0.30        2  Block1   Sten2  Block3      Låg     Strö     17.0     12.4</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4     0.30        2   Sten2   Sten1  Block1      Låg     Strö     16.9     18.0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5     0.20        2    Sand    Grus   Sten1      Låg     Strö     16.5     19.0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6     0.20        1   Sten1   Sten2  Block2      Låg     Strö     16.9     11.2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   ovegmang uvegmang uvegtyp narmiljo domtra1 domtra2 beskuggn vedivant vedivpar</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1              Mått    Palg    Lövsk      Al               80        0      0.0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2     Sakn     Mått    Moss     Åker    Lönn      Al       50        0      0.0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3              Mått    Palg    Artif                       -9       -9     -9.0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4              Mått    Moss    Lövsk      Al    Lönn       20        4      2.9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5     Ring     Mått    Moss      Äng      Al               10        2      2.6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6              Mått    Blom    Lövsk      Al                0       -9     -9.0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   vandhind typavpop lokalvar kalkpave kalkdatu kalkntyp paverkt1 paverkt2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1      Upp    Vandr        1       Ja       -9              Regl    Torrf</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2      Upp    Vandr        1      Nej        0             Jordb    Rensn</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3                         -9                 0                           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4      Upp    Vandr        1       Ja       -9             Fledr         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5     Inga    Vandr        1       Ja       -9             Fledr         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6                         -9                 0                           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   paverkt3 pastyrk1 pastyrk2 pastyrk3                  elfiske_anmarkni</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                 3        1       -9                                  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2    Artif        2        2        1 5 % av ytan avräknad av utföraren</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3                -9       -9       -9                                  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4                 2       -9       -9                                  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5                 1       -9       -9                                  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6                -9       -9       -9                                  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>        län länskod harO_NR huvudavrinningsområde hflodomr biflnr</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 Blekinge      10   86000             Mörrumsån      086      0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 Blekinge      10   86000             Mörrumsån      086      0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 Blekinge      10   86000             Mörrumsån      086      0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 Blekinge      10   86000             Mörrumsån      086      0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 Blekinge      10   86000             Mörrumsån      086      0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 Blekinge      10   86000             Mörrumsån      086      0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>           vattendrag xkoorvdr ykoorvdr               lokal lokalnr  rT90_X</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1          Mörrumsån   622563   143423  Pool 1 laxodlingen         6229800</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2          Mörrumsån   622563   143423        Pool 19 övre         6230700</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3          Mörrumsån   622563   143423             Flacket         6231992</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4          Mörrumsån   622563   143423           Rosendala         6232350</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5          Mörrumsån   622563   143423 Vittskövle hängbron         6232950</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 Mörrumsån sidofåra   622563   143423 Vittskövle sidofåra         6233040</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    rT90_Y swereF99_TM_N swereF99_TM_E fiskedatum  syfte artantal abbor asp</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 1434450       6227466        484447   20210908 Nö-lax        7     0   0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 1434350       6228364        484337   20210901 Nö-lax        7     0   0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 1434841       6229661        484812   20210830   Uppf        7     0   0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 1434850       6230019        484817   20210901 Nö-lax        3     0   0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 1435050       6230621        485010   20210903 Nö-lax        4     0   0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 1435220       6230713        485179   20210801   Uppf        4     0   0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   benlö bjöna besim stesi simpa hosim braxe bäcne flone havne nejonöga bäcrö0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1   0.8     0     0     0     0     0     0     0     0     0      0.0      0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2   0.0     0     0     0     0     0     0     0     0     0      1.9      0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3   1.3     0     0     0     0     0     0     0     0     0      2.8      0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4   0.0     0     0     0     0     0     0     0     0     0      0.0      0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5   0.6     0     0     0     0     0     0     0     0     0      0.0      0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6   0.0     0     0     0     0     0     0     0     0     0      0.5      0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   bäcrö bäcrötot bäcrömax bäcrömin bäCRmax0 bäcröxö0 bäcröxör bäcröxöt bäCXömax</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1     0        0       NA       NA       NA        0        0        0       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2     0        0       NA       NA       NA        0        0        0       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3     0        0       NA       NA       NA        0        0        0       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4     0        0       NA       NA       NA        0        0        0       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5     0        0       NA       NA       NA        0        0        0       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6     0        0       NA       NA       NA        0        0        0       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   bäCXömin bäCXömx0 elrit flodkräf signkräf kräfta färna gers grolö grönl gädda</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1       NA       NA  93.6        0        0      0   0.0    0     0     0   0.8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2       NA       NA 172.2        0        0      0  13.8    0     0     0   0.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3       NA       NA 146.9        0        0      0   2.9    0     0     0   0.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4       NA       NA  32.2        0        0      0   0.0    0     0     0   0.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5       NA       NA   9.1        0        0      0   0.0    0     0     0   0.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6       NA       NA  28.6        0        0      0   0.0    0     0     0   0.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   gös harr0 harr harrtot harrmax harrmin harrmax0 id kanrö0 kanrö kanrötot lake</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1   0     0    0       0      NA      NA       NA  0      0     0        0    0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2   0     0    0       0      NA      NA       NA  0      0     0        0    0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3   0     0    0       0      NA      NA       NA  0      0     0        0    0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4   0     0    0       0      NA      NA       NA  0      0     0        0    0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5   0     0    0       0      NA      NA       NA  0      0     0        0    0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6   0     0    0       0      NA      NA       NA  0      0     0        0    0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    lax0  lax laxtot laxmax laxmin laxmax0 lax0ber laxber lax0pval laxpval</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1  50.8 10.2   61.0    115     55      90       3      1     0.83    0.91</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2  96.0  7.7  103.7    130     40      90       3      3     0.87    0.96</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3  34.5  0.0   34.5     70     40      70       3     -9     0.82    0.00</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 137.2 14.1  151.3    125     45      80       3      3     0.83    0.97</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 108.6 14.9  123.5    555     50      80       1      1     0.83    0.91</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6  27.2  2.1   29.3    108     45      68       3      3     0.77    0.89</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   laxfisk0 laxfisk laxfixto laxfimax laxfimin laxfmax0 laxör0 laxör laxörTOT</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1        0       0        0       NA       NA       NA    0.0     0      0.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2        0       0        0       NA       NA       NA    1.5     0      1.5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3        0       0        0       NA       NA       NA    0.0     0      0.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4        0       0        0       NA       NA       NA    1.0     0      1.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5        0       0        0       NA       NA       NA    0.0     0      0.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6        0       0        0       NA       NA       NA    0.0     0      0.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   laxörmax laxörmin mal karp mört nissö nors regnb0 regnb regnbtot regnmax0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1       NA       NA   0    0  0.7     0    0      0     0        0       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2       60       60   0    0  0.0     0    0      0     0        0       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3       NA       NA   0    0  0.0     0    0      0     0        0       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4       70       70   0    0  0.0     0    0      0     0        0       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5       NA       NA   0    0  0.0     0    0      0     0        0       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6       NA       NA   0    0  0.0     0    0      0     0        0       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   rödin0 rödin rödintot rödinmax rödinmin rödimax0 ruda sankr sarv sik siklö</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1      0     0        0       NA       NA       NA    0     0    0   0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2      0     0        0       NA       NA       NA    0     0    0   0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3      0     0        0       NA       NA       NA    0     0    0   0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4      0     0        0       NA       NA       NA    0     0    0   0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5      0     0        0       NA       NA       NA    0     0    0   0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6      0     0        0       NA       NA       NA    0     0    0   0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   skrub rödsp småsp spigg stosp stäm sutar vimma  ål ålmax ålmin öring0 öring</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1     0     0     0     0     0    0     0     0 0.7   200   200    7.9     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2     0     0     0     0     0    0     0     0 0.0    NA    NA    6.0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3     0     0     0     0     0    0     0     0 0.0    NA    NA    1.3     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4     0     0     0     0     0    0     0     0 0.0    NA    NA    0.0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5     0     0     0     0     0    0     0     0 0.0    NA    NA    2.0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6     0     0     0     0     0    0     0     0 0.0    NA    NA    0.2     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   öringtot öringmax öringmin örinmax0 örin0ber öringber öri0pval örinpval sanst</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1      7.9       90       60       90        3       -9     1.00        0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2      6.0       80       60       80        1       -9     0.86        0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3      1.3       75       75       75        3       -9     1.00        0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4      0.0       NA       NA       NA       NA       NA     0.00        0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5      2.0       90       70       90        3       -9     0.99        0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6      0.2       70       70       70        1       -9     0.86        0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   lerst smsmörb utförare ansvarig fabrikat aggregat volt strstyrk pulsfrek</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1     0       0   Mörrum      Dcf    Lugab   Bensin  500      0.6       -9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2     0       0   Mörrum      Dcf    Lugab   Bensin  500      0.6       -9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3     0       0   Mörrum   Mörrum    Lugab   Bensin  500      0.6       -9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4     0       0   Mörrum      Dcf    Lugab   Bensin  500      0.6       -9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5     0       0   Mörrum      Dcf    Lugab   Bensin  500      0.6       -9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6     0       0   Eklövs       Sf    Lugab   Bensin  400     -9.0       -9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   antutfis metod bredd langd lokalbre area avfiskbr medbredd medyta grumligh</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1        3 Kvant  40.0  20.0      7.0  140        N       -9     -9        1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2        3 Kvant  25.0  17.0      8.0  136        N       -9     -9        1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3        3 Kvant  40.0  11.4      6.8   78        N       -9     -9        1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4        3 Kvant  30.0  14.7      8.0  118        N       -9     -9        1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5        3 Kvant  25.0  20.0     10.0  200        N       -9     -9        1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6        3 Kvant  19.8  25.0     19.8  495                -9     -9        1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   vtnfarg maxdjup medeldju bottento substr1 substr2 substr3 vattenni vattenha</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1       2     0.5     0.30        2  Block1   Sten2  Block3      Låg     Strö</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2       2     0.6     0.30        2   Sten2   Sten1  Block1      Låg     Strö</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3       2     0.6     0.20        2    Sand    Grus   Sten1      Låg     Strö</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4       2     0.5     0.20        1   Sten1   Sten2  Block2      Låg     Strö</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5       2     0.6     0.40        2   Sten2   Sten1  Block1      Låg     Strö</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6       1     0.5     0.22        2   Sten1    Grus   Sten2      Låg     Strö</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   vattente lufttemp ovegmang uvegmang uvegtyp narmiljo domtra1 domtra2 beskuggn</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1     17.0     12.4              Mått    Palg    Artif                       -9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2     16.9     18.0              Mått    Moss    Lövsk      Al    Lönn       20</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3     16.5     19.0     Ring     Mått    Moss      Äng      Al               10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4     16.9     11.2              Mått    Blom    Lövsk      Al                0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5     16.9     15.2              Mått    Palg    Lövsk     Bok      Al        0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6     18.7     17.2              Mått    Moss    Lövsk      Al     Bok       50</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   vedivant vedivpar vandhind typavpop lokalvar kalkpave kalkdatu kalkntyp</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1       -9     -9.0                         -9                 0         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2        4      2.9      Upp    Vandr        1       Ja       -9         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3        2      2.6     Inga    Vandr        1       Ja       -9         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4       -9     -9.0                         -9                 0         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5        0      0.0      Upp    Vandr        1       Ja       -9         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6        1      0.2      Upp                 2      Nej        0         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   paverkt1 paverkt2 paverkt3 pastyrk1 pastyrk2 pastyrk3 elfiske_anmarkni</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1                                  -9       -9       -9                 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2    Fledr                          2       -9       -9                 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3    Fledr                          1       -9       -9                 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4                                  -9       -9       -9                 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5    Bioto    Flott                 1        1       -9                 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6    Rensn                          2       -9       -9                 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   xkoorlok ykoorlok wgS84_Dec_N wgS84_Dec_E provplatsID stationsID</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1   625294   142962    56.39899    14.66544      167582     234315</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2   625374   142936    56.40619    14.66114      364001     364000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3   622980   143445    56.19190    14.74940      106988     247310</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4   623070   143435    56.19997    14.74756      107004     247313</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5   623199   143484    56.21164    14.75515      363941     363940</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6   623235   143485    56.21485    14.75521      107033     204955</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1   622980   143445    56.19190    14.74940      106988     247310</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2   623070   143435    56.19997    14.74756      107004     247313</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3   623199   143484    56.21164    14.75515      363941     363940</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4   623235   143485    56.21485    14.75521      107033     204955</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5   623295   143505    56.22027    14.75829      107049     247323</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6   623304   143522    56.22110    14.76100      363945     363944</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>             eU_CD      mS_CD svaR_Ver kommunnr    kommun   år månad vtyP_ED</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                 WA96144336              1082 Karlshamn 2021     8     Hav</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2 SE625140-479092 WA64692890 SVAR2016      763  Tingsryd 2021     8        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3 SE623952-143521 WA96144336 SVAR2016     1082 Karlshamn 2021     9     Hav</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4                 WA96144336              1082 Karlshamn 2021     9     Hav</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5 SE623952-143521 WA96144336 SVAR2016     1082 Karlshamn 2021     8     Hav</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6 SE623952-143521 WA96144336 SVAR2016     1082 Karlshamn 2021     9     Hav</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 SE623952-143521 WA96144336 SVAR2016     1082 Karlshamn 2021     9     Hav</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2                 WA96144336              1082 Karlshamn 2021     9     Hav</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 SE623952-143521 WA96144336 SVAR2016     1082 Karlshamn 2021     8     Hav</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 SE623952-143521 WA96144336 SVAR2016     1082 Karlshamn 2021     9     Hav</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 SE623952-143521 WA96144336 SVAR2016     1082 Karlshamn 2021     9     Hav</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 SE623952-143521 WA96144336 SVAR2016     1082 Karlshamn 2021     8     Hav</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   vtyp_123 hoh avriomrk andsjopr avstupp avstner mindistsj lutninG_PROM</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1        3 110   &lt;10000      &gt;10     0.4    10.0       0.4          5.6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2        1 112     &lt;100      &lt;05     5.5    10.0       5.5          0.3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3        3   8   &lt;10000      &gt;10    10.0     4.4       4.4          6.3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4        3  13   &lt;10000      &gt;10    10.0     5.3       5.3          3.6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5        3  18   &lt;10000      &gt;10     8.6     6.3       6.3          3.0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6        3  24   &lt;10000      &gt;10     8.2     6.7       6.7          5.8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1        3   8   &lt;10000      &gt;10    10.0     4.4       4.4          6.3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2        3  13   &lt;10000      &gt;10    10.0     5.3       5.3          3.6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3        3  18   &lt;10000      &gt;10     8.6     6.3       6.3          3.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4        3  24   &lt;10000      &gt;10     8.2     6.7       6.7          5.8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5        3  28   &lt;10000      &gt;10     7.6     7.3       7.3          4.5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6        3  25   &lt;10000      &gt;10     7.6     7.3       7.3          1.4</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   medtempar medT_JULI nsp nölax pred_nölax p_VIX_nölax nandtol pred_nandtol</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1         7      15.5   5  40.1    27.5113      0.6513  0.0116       0.0508</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2         7      15.5   3   0.0     7.5964      0.0165  0.0000       0.0064</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3         7      16.5   7  68.9    38.3809      0.7291  0.0133       0.0162</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4         7      16.5   5 109.7    33.9831      0.8897  0.0000       0.0202</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5         7      16.5   6  35.8    44.9944      0.4063  0.0069       0.0179</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6         7      15.5   2 151.3    33.6657      0.9423  0.0000       0.0206</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1         7      16.5   7  68.9    38.3809      0.7291  0.0133       0.0162</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2         7      16.5   5 109.7    33.9831      0.8897  0.0000       0.0202</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3         7      16.5   6  35.8    44.9944      0.4063  0.0069       0.0179</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4         7      15.5   2 151.3    33.6657      0.9423  0.0000       0.0206</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5         7      15.5   4 125.5    32.4066      0.9216  0.0044       0.0230</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6         7      15.5   4  29.5    35.8316      0.4205  0.0000       0.0249</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   p_VIX_nandtol nandlith pred_nandlith p_VIX_nandlith spproptol pred_spproptol</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1        0.7842   0.9884        0.9169         0.7483    0.2000         0.1108</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2        0.7013   0.7872        0.9890         0.0724    0.0000         0.0274</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3        0.5319   0.9819        0.9849         0.4829    0.4286         0.0571</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4        0.8260   1.0000        0.9857         0.6682    0.0000         0.0602</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5        0.6323   0.9931        0.9858         0.5530    0.1667         0.0497</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6        0.8285   1.0000        0.9856         0.6687    0.0000         0.0641</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1        0.5319   0.9819        0.9849         0.4829    0.4286         0.0571</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2        0.8260   1.0000        0.9857         0.6682    0.0000         0.0602</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3        0.6323   0.9931        0.9858         0.5530    0.1667         0.0497</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4        0.8285   1.0000        0.9856         0.6687    0.0000         0.0641</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5        0.7136   0.9956        0.9852         0.5794    0.2500         0.0859</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6        0.8517   1.0000        0.9852         0.6708    0.0000         0.1205</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   p_VIX_spproptol sppropint pred_sppropintol p_VIX_sppropintol kvot pred_kvot</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1          0.2890    0.6000           0.4528              0.64    1    0.2373</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2          0.7714    0.3333           0.7720              0.12   NA    0.6947</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3          0.0172    0.2857           0.6068              0.20    1    0.2373</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4          0.8663    0.6000           0.6189              0.48    1    0.2373</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5          0.1906    0.5000           0.6895              0.31    1    0.2373</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6          0.8741    0.5000           0.6790              0.32    1    0.2373</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1          0.0172    0.2857           0.6068              0.20    1    0.2373</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2          0.8663    0.6000           0.6189              0.48    1    0.2373</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3          0.1906    0.5000           0.6895              0.31    1    0.2373</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4          0.8741    0.5000           0.6790              0.32    1    0.2373</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5          0.1557    0.5000           0.6132              0.38    1    0.2373</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6          0.9437    0.7500           0.4591              0.77    1    0.2373</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   p_VIX_kvot simpson pred_simpson p_VIXh_simpson  viXsm   viXh    vix viX_klass</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1     0.9303  0.5705       0.2525         0.2492 0.7438 0.5657 0.6747         2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2         NA  0.5794       0.2803         0.2829 0.0711 0.3645 0.3372         3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3     0.9303  0.5419       0.3549         0.5086 0.5864 0.4510 0.4825         2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4     0.9303  0.5412       0.3818         0.5747 0.7422 0.6394 0.7768         1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5     0.9303  0.3667       0.3335         0.9032 0.5504 0.5807 0.5041         2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6     0.9303  0.2894       0.3270         0.8866 0.7159 0.7273 0.7610         1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1     0.9303  0.5419       0.3549         0.5086 0.5864 0.4510 0.4825         2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2     0.9303  0.5412       0.3818         0.5747 0.7422 0.6394 0.7768         1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3     0.9303  0.3667       0.3335         0.9032 0.5504 0.5807 0.5041         2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4     0.9303  0.2894       0.3270         0.8866 0.7159 0.7273 0.7610         1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5     0.9303  0.1608       0.4005         0.3408 0.7045 0.5718 0.6145         2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6     0.9303  0.5117       0.5350         0.9351 0.6997 0.5800 0.7657         1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   fisktom viX_anmärkni viX_anmärkni2 pre_sd_VIX_c    p_1    p_2    p_3    p_4</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1      NA                                  0.1607 0.3215 0.5807 0.0914 0.0062</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2      NA                                  0.0983 0.0000 0.0937 0.6459 0.2557</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3      NA                                  0.1524 0.0400 0.5010 0.3733 0.0815</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4      NA                                  0.1490 0.5736 0.4077 0.0183 0.0004</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5      NA                                  0.1551 0.0570 0.5381 0.3359 0.0658</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6      NA                                  0.1460 0.5322 0.4459 0.0215 0.0004</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1      NA                                  0.1524 0.0400 0.5010 0.3733 0.0815</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2      NA                                  0.1490 0.5736 0.4077 0.0183 0.0004</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3      NA                                  0.1551 0.0570 0.5381 0.3359 0.0658</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4      NA                                  0.1460 0.5322 0.4459 0.0215 0.0004</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5      NA                                  0.1350 0.1593 0.7039 0.1310 0.0058</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6      NA                                  0.1198 0.5548 0.4389 0.0063 0.0000</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      p_5 p23_diff viX23_gränsfall gränsfall_string viXmorf påverkat_VIXmorf</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 0.0001   0.4893              NA                   0.7378                0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2 0.0046   0.5522              NA                   0.1959                1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3 0.0042   0.1278              NA                   0.7274                0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4 0.0000   0.3894              NA                   0.5565                0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5 0.0032   0.2022              NA                   0.4501                0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6 0.0000   0.4244              NA                   0.2918                0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 0.0042   0.1278              NA                   0.7274                0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 0.0000   0.3894              NA                   0.5565                0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 0.0032   0.2022              NA                   0.4501                0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 0.0000   0.4244              NA                   0.2918                0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 0.0000   0.5729              NA                   0.4575                0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 0.0000   0.4326              NA                   0.4288                0</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                                                  komm_VIXmorf</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1 God/Hög ekologisk status enligt VIX. VIXmorf ej tillämpbart</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2          VIX&lt;0,467 och morfologiskt påverkat enligt VIXmorf</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 God/Hög ekologisk status enligt VIX. VIXmorf ej tillämpbart</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 3 God/Hög ekologisk status enligt VIX. VIXmorf ej tillämpbart</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4 God/Hög ekologisk status enligt VIX. VIXmorf ej tillämpbart</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5 God/Hög ekologisk status enligt VIX. VIXmorf ej tillämpbart</span>

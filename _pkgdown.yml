@@ -5,6 +5,10 @@ reference:
   desc:  Functions for the KulFangst API
 - contents:
   - has_concept("KulFangst API functions")
+- title: KulIndivid
+  desc:  Functions for the KulIndivid API
+- contents:
+  - has_concept("KulIndivid API functions")
 - title: SersAggregated
   desc:  Functions for the SersAggregated API
 - contents:

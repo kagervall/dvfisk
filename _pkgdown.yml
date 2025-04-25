@@ -1,3 +1,5 @@
+template:
+  bootstrap: 5
 reference:
 - title: KulFangst
   desc:  Functions for the KulFangst API

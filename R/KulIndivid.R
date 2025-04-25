@@ -110,7 +110,7 @@ kul_individ_ar <- function(lan, lokalId, fiske) {
 #' @param ar integer, one or several year (ar) to get data for
 #'
 #' @returns
-#' A data.frame (22 columns) with the survey data for the site (lokalId)
+#' A data.frame (16 columns) with the survey data for the site (lokalId)
 #' @export
 #'
 #' @family KulIndivid API functions

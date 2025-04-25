@@ -22,6 +22,8 @@ Information about Database for Survey test-fishing (NORS) is available at <https
 
 ## Database for Coastal Fish (KUL)
 
-R API:s are not available for NORS yet.
+R API:s available for KUL: **KulFangst** (beta). 
+
+R API:s not available (yet) for **KulIndivid** (TBA) and **KulLangd** (TBA).
 
 Information about Database for Coastal Fish (KUL) is available at <https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-coastal-fish-kul/>

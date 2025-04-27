@@ -1,5 +1,5 @@
 #####
-# This file contains the functions to access the KulIndivid API.
+# This file contains the functions to access the KulLangd API.
 #####
 
 
@@ -9,7 +9,7 @@
 #' A vector of type character containing names of counties (län) known in the KUL database
 #' @export
 #'
-#' @family KulIndivid API functions
+#' @family KulLangd API functions
 #'
 #' @seealso Description of
 #'  \url{https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-coastal-fish-kul/},
@@ -17,10 +17,10 @@
 #'
 #' @examples
 #' # This example will access the Internet to get the data and will not work offline
-#' counties <- kul_individ_lan()
+#' counties <- kul_langd_lan()
 #' counties
-kul_individ_lan <- function() {
-  req <- .dvfisk_endpoint("KulIndivid", "lan")
+kul_langd_lan <- function() {
+  req <- .dvfisk_endpoint("KulLangd", "lan")
   body <- .dvfisk_get_body(req)
   return(body)
 }
@@ -34,17 +34,17 @@ kul_individ_lan <- function() {
 #' A data.frame with columns `id` and `name` the sites (lokaler) in the county (län)
 #' @export
 #'
-#' @family KulIndivid API functions
+#' @family KulLangd API functions
 #'
 #' @seealso Description of
 #'  \url{https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-coastal-fish-kul/},
 #'  description of API \url{https://dvfisk.slu.se/swagger/index.html}
 #'
 #' @examples
-#' kul_individ_lokaler("Blekinge län")
+#' kul_langd_lokaler("Blekinge län")
 #
-kul_individ_lokaler <- function(lan) {
-  req <- .dvfisk_endpoint("KulIndivid", "lokaler") |>
+kul_langd_lokaler <- function(lan) {
+  req <- .dvfisk_endpoint("KulLangd", "lokaler") |>
     httr2::req_url_query(lan = lan)
   body <- .dvfisk_get_body(req)
   return(body)
@@ -59,7 +59,7 @@ kul_individ_lokaler <- function(lan) {
 #' A vector of characters with the types of surveys available for the site (lokalId)
 #' @export
 #'
-#' @family KulIndivid API functions
+#' @family KulLangd API functions
 #'
 #' @seealso Description of
 #'  \url{https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-coastal-fish-kul/},
@@ -67,10 +67,10 @@ kul_individ_lokaler <- function(lan) {
 #'
 #' @examples
 #' # This example will access the Internet to get the data and will not work offline
-#' kul_individ_fisken("Blekinge län", 204)
+#' kul_langd_fisken("Blekinge län", 204)
 #'
-kul_individ_fisken <- function(lan, lokalId) {
-  req <- .dvfisk_endpoint("KulIndivid", "fisken") |>
+kul_langd_fisken <- function(lan, lokalId) {
+  req <- .dvfisk_endpoint("KulLangd", "fisken") |>
     httr2::req_url_query(lan = lan, lokalId = lokalId)
   body <- .dvfisk_get_body(req)
   return(body)
@@ -86,17 +86,17 @@ kul_individ_fisken <- function(lan, lokalId) {
 #' A vector of integers with the years when survey data available for the site (lokalId)
 #' @export
 #'
-#' @family KulIndivid API functions
+#' @family KulLangd API functions
 #'
 #' @seealso Description of
 #'  \url{https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-coastal-fish-kul/},
 #'  description of API \url{https://dvfisk.slu.se/swagger/index.html}
 #'
 #' @examples
-#' kul_individ_ar("Blekinge län", 204, "Gåsöfjärden inventering")
+#' kul_langd_ar("Blekinge län", 204, "Gåsöfjärden inventering")
 #'
-kul_individ_ar <- function(lan, lokalId, fiske) {
-  req <- .dvfisk_endpoint("KulIndivid", "ar") |>
+kul_langd_ar <- function(lan, lokalId, fiske) {
+  req <- .dvfisk_endpoint("KulLangd", "ar") |>
     httr2::req_url_query(lan = lan, lokalId = lokalId, fiske = fiske)
   body <- .dvfisk_get_body(req)
   return(body)
@@ -110,10 +110,10 @@ kul_individ_ar <- function(lan, lokalId, fiske) {
 #' @param ar integer, one or several year (ar) to get data for
 #'
 #' @returns
-#' A data.frame (16 columns) with the survey data for the site (lokalId)
+#' A data.frame (11 columns) with the survey data for the site (lokalId)
 #' @export
 #'
-#' @family KulIndivid API functions
+#' @family KulLangd API functions
 #'
 #' @seealso Description of
 #'  \url{https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-coastal-fish-kul/},
@@ -121,10 +121,10 @@ kul_individ_ar <- function(lan, lokalId, fiske) {
 #'
 #' @examples
 #' # This example will access the Internet to get the data and will not work offline
-#' results <- kul_individ_rapport("Blekinge län", 204, "Gåsöfjärden inventering", ar = 2019)
+#' results <- kul_langd_rapport("Blekinge län", 204, "Gåsöfjärden inventering", ar = 2019)
 #' dim(results)
-kul_individ_rapport <- function(lan, lokalId, fiske, ar) {
-  req <- .dvfisk_endpoint("KulIndivid", "rapport") |>
+kul_langd_rapport <- function(lan, lokalId, fiske, ar) {
+  req <- .dvfisk_endpoint("KulLangd", "rapport") |>
     httr2::req_url_query(lan = lan, lokalId = lokalId,
                          fiske = fiske, ar = ar, .multi = "explode")
   body <- .dvfisk_get_body(req)

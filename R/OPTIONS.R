@@ -9,6 +9,8 @@ OPTIONS <- settings::options_manager(
   KulFangst_endpoints = c("lan", "lokaler", "fisken", "ar", "rapport"),
   KulIndivid_url ="https://dvfisk.slu.se/api/V1/kul/individprovtagningar",
   KulIndivid_endpoints = c("lan", "lokaler", "fisken", "ar", "rapport"),
+  KulLangd_url ="https://dvfisk.slu.se/api/V1/kul/langd",
+  KulLangd_endpoints = c("lan", "lokaler", "fisken", "ar", "arter", "rapport"),
   SersVix_url = "https://dvfisk.slu.se/api/V1/sers/data-vix",
   SersVix_endpoints = c("lan", "kommuner", "huvudavrinningsomraden", "rapport"),
   SersAggregerad_url = "https://dvfisk.slu.se/api/V1/sers/data-aggregerad",

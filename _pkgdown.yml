@@ -9,6 +9,14 @@ reference:
   desc:  Functions for the KulIndivid API
 - contents:
   - has_concept("KulIndivid API functions")
+- title: KulLangd
+  desc:  Functions for the KulLangd API
+- contents:
+  - has_concept("KulLangd API functions")
+- title: NorsAggregerad
+  desc:  Functions for the NorsAggregerad API
+- contents:
+  - has_concept("NorsAggregerad API functions")
 - title: SersAggregated
   desc:  Functions for the SersAggregated API
 - contents:

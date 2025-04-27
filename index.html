@@ -23,7 +23,7 @@
 
     <a class="navbar-brand me-2" href="index.html">dvfisk</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.1</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,6 +51,10 @@
 <img src="logo.png" class="logo" alt=""><h1 id="dvfisk-query-and-get-data-from-dvfisk-">dvfisk: Query and Get Data from <a href="https://dvfisk.slu.se/" class="external-link">DVFISK</a> <a class="anchor" aria-label="anchor" href="#dvfisk-query-and-get-data-from-dvfisk-"></a>
 </h1>
 </div>
+<p>Install development version from GitHub:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"kagervall/dvfisk"</span><span class="op">)</span></span></code></pre></div>
 <p>Package <code>dvfisk</code> gives API access to databases maintained by <a href="https://www.slu.se/en/departments/aquatic-resources1/" title="Link to SLU Aqua" class="external-link">SLU Aqua</a>.</p>
 <p>Link to dvfisk main page: <a href="https://dvfisk.slu.se/" class="external-link uri">https://dvfisk.slu.se/</a>. Documentation for API:s provided on <a href="https://dvfisk.slu.se/" class="external-link uri">https://dvfisk.slu.se/</a> can be found on <a href="https://dvfisk.slu.se/swagger/index.html" class="external-link uri">https://dvfisk.slu.se/swagger/index.html</a></p>
 <div class="section level2">
@@ -63,14 +67,13 @@
 <div class="section level2">
 <h2 id="database-for-survey-test-fishing-nors">Database for Survey test-fishing (NORS)<a class="anchor" aria-label="anchor" href="#database-for-survey-test-fishing-nors"></a>
 </h2>
-<p>R API:s are not available for NORS yet.</p>
+<p>R API:s available for KUL: <strong>NorsAggregerad</strong> (beta), <strong>NorsFangst</strong> (TBA) and <strong>NorsIndivid</strong> (TBA).</p>
 <p>Information about Database for Survey test-fishing (NORS) is available at <a href="https://www.slu.se/en/departments/aquatic-resources1/databases/national-register-of-survey-test-fishing-nors/" class="external-link uri">https://www.slu.se/en/departments/aquatic-resources1/databases/national-register-of-survey-test-fishing-nors/</a></p>
 </div>
 <div class="section level2">
 <h2 id="database-for-coastal-fish-kul">Database for Coastal Fish (KUL)<a class="anchor" aria-label="anchor" href="#database-for-coastal-fish-kul"></a>
 </h2>
-<p>R API:s available for KUL: <strong>KulFangst</strong> (beta).</p>
-<p>R API:s not available (yet): <strong>KulIndivid</strong> (TBA) and <strong>KulLangd</strong> (TBA).</p>
+<p>R API:s available for KUL: <strong>KulFangst</strong> (beta), <strong>KulIndivid</strong> (beta) and <strong>KulLangd</strong> (beta).</p>
 <p>Information about Database for Coastal Fish (KUL) is available at <a href="https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-coastal-fish-kul/" class="external-link uri">https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-coastal-fish-kul/</a></p>
 </div>
 </div>

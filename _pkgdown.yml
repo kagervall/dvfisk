@@ -17,6 +17,10 @@ reference:
   desc:  Functions for the NorsAggregerad API
 - contents:
   - has_concept("NorsAggregerad API functions")
+- title: NorsFangst
+  desc:  Functions for the NorsFangst API
+- contents:
+  - has_concept("NorsFangst API functions")
 - title: SersAggregated
   desc:  Functions for the SersAggregated API
 - contents:

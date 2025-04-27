@@ -32,8 +32,16 @@ Information about Swedish Electrofishing Register (SERS) is available at
 
 ## Database for Survey test-fishing (NORS)
 
+The data in NORS is quality assured test-fishing data generated in
+national and regional environmental programs. NORS contains data from
+standardized test-fishing with Nordic multi-mesh gillnets that
+investigate the fish fauna in a lake. The nets, consisting of 12 mesh
+sizes, catch most of the Swedish species in a representative way, giving
+a good estimate of species abundance and size distribution. in thousands
+of lakes. The database is in Swedish.
+
 R API:s available for KUL: **NorsAggregerad** (beta), **NorsFangst**
-(TBA) and **NorsIndivid** (TBA).
+(beta) and **NorsIndivid** (TBA).
 
 Information about Database for Survey test-fishing (NORS) is available
 at

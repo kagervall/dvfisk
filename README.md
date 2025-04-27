@@ -32,7 +32,8 @@ Information about Swedish Electrofishing Register (SERS) is available at
 
 ## Database for Survey test-fishing (NORS)
 
-R API:s are not available for NORS yet.
+R API:s available for KUL: **NorsAggregerad** (beta), **NorsFangst**
+(TBA) and **NorsIndivid** (TBA).
 
 Information about Database for Survey test-fishing (NORS) is available
 at

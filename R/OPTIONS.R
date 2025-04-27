@@ -11,11 +11,12 @@ OPTIONS <- settings::options_manager(
   KulIndivid_endpoints = c("lan", "lokaler", "fisken", "ar", "rapport"),
   KulLangd_url ="https://dvfisk.slu.se/api/V1/kul/langd",
   KulLangd_endpoints = c("lan", "lokaler", "fisken", "ar", "arter", "rapport"),
+  NorsAggregerad_url ="https://dvfisk.slu.se/api/V1/nors/data-aggregerad",
+  NorsAggregerad_endpoints = c("lan", "huvudavrinningsomraden", "rapport"),
   SersVix_url = "https://dvfisk.slu.se/api/V1/sers/data-vix",
   SersVix_endpoints = c("lan", "kommuner", "huvudavrinningsomraden", "rapport"),
   SersAggregerad_url = "https://dvfisk.slu.se/api/V1/sers/data-aggregerad",
   SersAggregerad_endpoints = c("lan", "huvudavrinningsomraden", "rapport")
-
   )
 
 

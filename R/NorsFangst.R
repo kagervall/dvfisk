@@ -1,8 +1,6 @@
-#####}
+#####
 # This file contains the functions to access the NorsFangst API.
 #####
-
-
 
 #' Return counties (län) known in the NORS database
 #'
@@ -28,7 +26,8 @@ nors_fangst_lan <- function() {
 
 #' Get the municipalities (kommun) in Sweden known in the NORS database
 #'
-#' This function returns municipalities (kommun) in  a county in Sweden.
+#' This function returns municipalities (kommun) in  a county in Sweden. Only
+#' correctly spelled names of counties (län) will generate a result.
 #'
 #' @param lan character string with the name of a county (län) in Sweden
 #'
@@ -43,7 +42,7 @@ nors_fangst_lan <- function() {
 #'
 #' @examples
 #' # This example will access the Internet to get the data and will not work offline
-#' nors_fangst_kommuner()
+#' nors_fangst_kommuner(lan = "Uppsala Län")
 #'
 nors_fangst_kommuner <- function(lan) {
   if (missing(lan)) {

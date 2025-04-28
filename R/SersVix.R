@@ -30,7 +30,8 @@ sers_vix_lan <- function() {
 #' This function returns the municipalities (kommuner) in a county (län) in Sweden.
 #' The parameter `lan` must be a valid county (län) in Sweden.
 #'
-#' @param lan A character string with the name of a county (län) in Sweden
+#' @param lan A character string with the name of a county (län) in Sweden. Only
+#' correctly spelled names of counties (län) will generate a result.
 #'
 #'
 #' @returns
@@ -47,6 +48,9 @@ sers_vix_lan <- function() {
 #' kommuner <- sers_vix_kommuner("Västra Götaland")
 #' kommuner
 sers_vix_kommuner <- function(lan) {
+  if (missing(lan)) {
+    stop("parameter lan is required")
+  }
   req <- .dvfisk_endpoint("SersVix", "kommuner") |>
       httr2::req_url_query(lan = lan)
   body <- .dvfisk_get_body(req)

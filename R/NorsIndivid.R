@@ -28,7 +28,8 @@ nors_individ_lan <- function() {
 
 #' Return the municipalities (kommun) in Sweden known in the NORS database
 #'
-#' This function returns municipalities (kommun) in  a county in Sweden.
+#' This function returns municipalities (kommun) in  a county in Sweden. Only
+#' correctly spelled names of counties (län) will generate a result.
 #'
 #' @param lan character string with the name of a county (län) in Sweden
 #'

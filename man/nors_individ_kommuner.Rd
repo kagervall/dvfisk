@@ -13,7 +13,8 @@ nors_individ_kommuner(lan)
 A list of municipalities (kommun) in specified county (län).
 }
 \description{
-This function returns municipalities (kommun) in  a county in Sweden.
+This function returns municipalities (kommun) in  a county in Sweden. Only
+correctly spelled names of counties (län) will generate a result.
 }
 \examples{
 # This example will access the Internet to get the data and will not work offline

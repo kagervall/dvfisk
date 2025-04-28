@@ -7,7 +7,8 @@
 sers_vix_kommuner(lan)
 }
 \arguments{
-\item{lan}{A character string with the name of a county (län) in Sweden}
+\item{lan}{A character string with the name of a county (län) in Sweden. Only
+correctly spelled names of counties (län) will generate a result.}
 }
 \value{
 A vector of type character containing names of municipalities (kommuner) in the county (län)

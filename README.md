@@ -24,24 +24,6 @@ and the package:
 citation("dvfisk")
 ```
 
-    ## Warning in citation("dvfisk"): could not determine year for 'dvfisk' from
-    ## package DESCRIPTION file
-
-    ## To cite package 'dvfisk' in publications use:
-    ## 
-    ##   Kagervall A (????). _dvfisk: Query and Get Data From various API:s at
-    ##   https://dvfisk.slu.se_. R package version 0.2.2,
-    ##   <https://kagervall.github.io/dvfisk>.
-    ## 
-    ## A BibTeX entry for LaTeX users is
-    ## 
-    ##   @Manual{,
-    ##     title = {dvfisk: Query and Get Data From various API:s at https://dvfisk.slu.se},
-    ##     author = {Anders Kagervall},
-    ##     note = {R package version 0.2.2},
-    ##     url = {https://kagervall.github.io/dvfisk},
-    ##   }
-
 ## Swedish Electrofishing Register (SERS)
 
 R API:s available for SERS: **SersAggregerad** (beta) and **SersVix**
@@ -55,10 +37,10 @@ information about the site and the fishing.
 Information about Swedish Electrofishing Register (SERS) is available at
 <https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-testfishing-in-streams/>
 
-Citation: Sers, B. (Editor). 2013. Swedish Electrofishing RegiSter –
-SERS. Swedish University of Agricultural Sciences (SLU), Department of
-Aquatic Resources. <http://www.slu.se/electrofishingdatabase>.
-\[yyyy-mm-dd\]
+Citation:  
+Sers, B. (Editor). 2013. Swedish Electrofishing RegiSter – SERS. Swedish
+University of Agricultural Sciences (SLU), Department of Aquatic
+Resources. <http://www.slu.se/electrofishingdatabase>. \[yyyy-mm-dd\].
 
 ## Database for Survey test-fishing (NORS)
 
@@ -77,9 +59,10 @@ Information about Database for Survey test-fishing (NORS) is available
 at
 <https://www.slu.se/en/departments/aquatic-resources1/databases/national-register-of-survey-test-fishing-nors/>
 
-Citation: National Register of Survey test-fishing - NORS. yyyy. Swedish
+Citation:  
+National Register of Survey test-fishing - NORS. yyyy. Swedish
 University of Agricultural Sciences, Department of Aquatic Resources.
-<http://www.slu.se/sjoprovfiskedatabasen> \[yyyy-mm-dd\]
+<http://www.slu.se/sjoprovfiskedatabasen> \[yyyy-mm-dd\].
 
 ## Database for Coastal Fish (KUL)
 
@@ -94,6 +77,7 @@ and **KulLangd** (beta).
 Information about Database for Coastal Fish (KUL) is available at
 <https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-coastal-fish-kul/>
 
-Citation: Database for Coastal Fish – KUL. yyyy. Swedish University of
+Citation:  
+Database for Coastal Fish – KUL. yyyy. Swedish University of
 Agricultural Sciences (SLU), Department of Aquatic Resources.
-<http://www.slu.se/kul> \[yyyy-mm-dd\]
+<http://www.slu.se/kul> \[yyyy-mm-dd\].

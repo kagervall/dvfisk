@@ -15,6 +15,8 @@ OPTIONS <- settings::options_manager(
   NorsAggregerad_endpoints = c("lan", "huvudavrinningsomraden", "rapport"),
   NorsFangst_url ="https://dvfisk.slu.se/api/V1/nors/fangst",
   NorsFangst_endpoints = c("lan", "vatten", "kommuner", "rapport"),
+  NorsIndivid_url ="https://dvfisk.slu.se/api/V1/nors/individ",
+  NorsIndivid_endpoints = c("lan", "vatten", "kommuner", "rapport"),
   SersVix_url = "https://dvfisk.slu.se/api/V1/sers/data-vix",
   SersVix_endpoints = c("lan", "kommuner", "huvudavrinningsomraden", "rapport"),
   SersAggregerad_url = "https://dvfisk.slu.se/api/V1/sers/data-aggregerad",

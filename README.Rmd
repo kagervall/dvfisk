@@ -17,6 +17,12 @@ Package `dvfisk` gives API access to databases maintained by [SLU Aqua](https://
 
 Link to dvfisk main page: <https://dvfisk.slu.se/>. Documentation for API:s provided on <https://dvfisk.slu.se/> can be found on <https://dvfisk.slu.se/swagger/index.html>
 
+When using this package, please cite both the data source (see below) and the package:
+```{r}
+citation("dvfisk")
+```
+
+
 ## Swedish Electrofishing Register (SERS)
 
 R API:s available for SERS: **SersAggregerad** (beta) and **SersVix** (beta).
@@ -27,6 +33,9 @@ about the site and the fishing.
 
 Information about Swedish Electrofishing Register (SERS) is available at <https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-testfishing-in-streams/>
 
+Citation:
+Sers, B. (Editor). 2013. Swedish Electrofishing RegiSter – SERS. Swedish University of Agricultural Sciences (SLU), Department of Aquatic Resources. http://www.slu.se/electrofishingdatabase. [yyyy-mm-dd]
+
 ## Database for Survey test-fishing (NORS)
 
 The data in NORS is quality assured test-fishing data generated in national and regional environmental programs.
@@ -35,12 +44,20 @@ that investigate the fish fauna in a lake. The nets, consisting of 12 mesh sizes
 in a representative way, giving a good estimate of species abundance and size distribution. in thousands of lakes.
 The database is in Swedish.
 
-R API:s available for KUL: **NorsAggregerad** (beta), **NorsFangst** (beta) and **NorsIndivid** (TBA).
+R API:s available for KUL: **NorsAggregerad** (beta), **NorsFangst** (beta) and **NorsIndivid** (beta).
 
 Information about Database for Survey test-fishing (NORS) is available at <https://www.slu.se/en/departments/aquatic-resources1/databases/national-register-of-survey-test-fishing-nors/>
 
+Citation:
+National Register of Survey test-fishing - NORS. yyyy. Swedish University of Agricultural Sciences, Department of Aquatic Resources.  http://www.slu.se/sjoprovfiskedatabasen [yyyy-mm-dd]
+
 ## Database for Coastal Fish (KUL)
+
+The KUL database contains catch data from the coastal fishery. In its current form, KUL has been in operation since 2006. Individual fish data are also stored in KUL. This can be gender distribution or information on the length, weight or age of individual fish. 
 
 R API:s available for KUL: **KulFangst** (beta), **KulIndivid** (beta) and **KulLangd** (beta). 
 
 Information about Database for Coastal Fish (KUL) is available at <https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-coastal-fish-kul/>
+
+Citation:
+Database for Coastal Fish – KUL. yyyy. Swedish University of Agricultural Sciences (SLU), Department of Aquatic Resources. http://www.slu.se/kul [yyyy-mm-dd]

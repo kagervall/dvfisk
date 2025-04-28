@@ -23,7 +23,7 @@
 
     <a class="navbar-brand me-2" href="index.html">dvfisk</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.3</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.4</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,25 +57,49 @@
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"kagervall/dvfisk"</span><span class="op">)</span></span></code></pre></div>
 <p>Package <code>dvfisk</code> gives API access to databases maintained by <a href="https://www.slu.se/en/departments/aquatic-resources1/" title="Link to SLU Aqua" class="external-link">SLU Aqua</a>.</p>
 <p>Link to dvfisk main page: <a href="https://dvfisk.slu.se/" class="external-link uri">https://dvfisk.slu.se/</a>. Documentation for API:s provided on <a href="https://dvfisk.slu.se/" class="external-link uri">https://dvfisk.slu.se/</a> can be found on <a href="https://dvfisk.slu.se/swagger/index.html" class="external-link uri">https://dvfisk.slu.se/swagger/index.html</a></p>
+<p>When using this package, please cite both the data source (see below) and the package:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"dvfisk"</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="do">## Warning in citation("dvfisk"): could not determine year for 'dvfisk' from</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="do">## package DESCRIPTION file</span></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="do">## To cite package 'dvfisk' in publications use:</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="do">## </span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a><span class="do">##   Kagervall A (????). _dvfisk: Query and Get Data From various API:s at</span></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a><span class="do">##   https://dvfisk.slu.se_. R package version 0.2.2,</span></span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a><span class="do">##   &lt;https://kagervall.github.io/dvfisk&gt;.</span></span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a><span class="do">## </span></span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a><span class="do">## A BibTeX entry for LaTeX users is</span></span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a><span class="do">## </span></span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a><span class="do">##   @Manual{,</span></span>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a><span class="do">##     title = {dvfisk: Query and Get Data From various API:s at https://dvfisk.slu.se},</span></span>
+<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a><span class="do">##     author = {Anders Kagervall},</span></span>
+<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a><span class="do">##     note = {R package version 0.2.2},</span></span>
+<span id="cb3-16"><a href="#cb3-16" tabindex="-1"></a><span class="do">##     url = {https://kagervall.github.io/dvfisk},</span></span>
+<span id="cb3-17"><a href="#cb3-17" tabindex="-1"></a><span class="do">##   }</span></span></code></pre></div>
 <div class="section level2">
 <h2 id="swedish-electrofishing-register-sers">Swedish Electrofishing Register (SERS)<a class="anchor" aria-label="anchor" href="#swedish-electrofishing-register-sers"></a>
 </h2>
 <p>R API:s available for SERS: <strong>SersAggregerad</strong> (beta) and <strong>SersVix</strong> (beta).</p>
 <p>SersAggregerad gives you aggregated data for all years a site has been fished. SersVix returns of the data for individual sites for each year fished with estimates for the density of all species caught and lots of information about the site and the fishing.</p>
 <p>Information about Swedish Electrofishing Register (SERS) is available at <a href="https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-testfishing-in-streams/" class="external-link uri">https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-testfishing-in-streams/</a></p>
+<p>Citation: Sers, B. (Editor). 2013. Swedish Electrofishing RegiSter – SERS. Swedish University of Agricultural Sciences (SLU), Department of Aquatic Resources. <a href="http://www.slu.se/electrofishingdatabase" class="external-link uri">http://www.slu.se/electrofishingdatabase</a>. [yyyy-mm-dd]</p>
 </div>
 <div class="section level2">
 <h2 id="database-for-survey-test-fishing-nors">Database for Survey test-fishing (NORS)<a class="anchor" aria-label="anchor" href="#database-for-survey-test-fishing-nors"></a>
 </h2>
 <p>The data in NORS is quality assured test-fishing data generated in national and regional environmental programs. NORS contains data from standardized test-fishing with Nordic multi-mesh gillnets that investigate the fish fauna in a lake. The nets, consisting of 12 mesh sizes, catch most of the Swedish species in a representative way, giving a good estimate of species abundance and size distribution. in thousands of lakes. The database is in Swedish.</p>
-<p>R API:s available for KUL: <strong>NorsAggregerad</strong> (beta), <strong>NorsFangst</strong> (beta) and <strong>NorsIndivid</strong> (TBA).</p>
+<p>R API:s available for KUL: <strong>NorsAggregerad</strong> (beta), <strong>NorsFangst</strong> (beta) and <strong>NorsIndivid</strong> (beta).</p>
 <p>Information about Database for Survey test-fishing (NORS) is available at <a href="https://www.slu.se/en/departments/aquatic-resources1/databases/national-register-of-survey-test-fishing-nors/" class="external-link uri">https://www.slu.se/en/departments/aquatic-resources1/databases/national-register-of-survey-test-fishing-nors/</a></p>
+<p>Citation: National Register of Survey test-fishing - NORS. yyyy. Swedish University of Agricultural Sciences, Department of Aquatic Resources. <a href="http://www.slu.se/sjoprovfiskedatabasen" class="external-link uri">http://www.slu.se/sjoprovfiskedatabasen</a> [yyyy-mm-dd]</p>
 </div>
 <div class="section level2">
 <h2 id="database-for-coastal-fish-kul">Database for Coastal Fish (KUL)<a class="anchor" aria-label="anchor" href="#database-for-coastal-fish-kul"></a>
 </h2>
+<p>The KUL database contains catch data from the coastal fishery. In its current form, KUL has been in operation since 2006. Individual fish data are also stored in KUL. This can be gender distribution or information on the length, weight or age of individual fish.</p>
 <p>R API:s available for KUL: <strong>KulFangst</strong> (beta), <strong>KulIndivid</strong> (beta) and <strong>KulLangd</strong> (beta).</p>
 <p>Information about Database for Coastal Fish (KUL) is available at <a href="https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-coastal-fish-kul/" class="external-link uri">https://www.slu.se/en/departments/aquatic-resources1/databases/database-for-coastal-fish-kul/</a></p>
+<p>Citation: Database for Coastal Fish – KUL. yyyy. Swedish University of Agricultural Sciences (SLU), Department of Aquatic Resources. <a href="http://www.slu.se/kul" class="external-link uri">http://www.slu.se/kul</a> [yyyy-mm-dd]</p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">

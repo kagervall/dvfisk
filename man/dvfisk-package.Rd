@@ -4,7 +4,7 @@
 \name{dvfisk-package}
 \alias{dvfisk}
 \alias{dvfisk-package}
-\title{dvfisk: Query and Get Data From various API:s at https://dvfisk.slu.se}
+\title{dvfisk: Query and Get Data from Various API:s at https://dvfisk.slu.se}
 \description{
 To learn more about \code{dvfisk}, start with the vignettes:
 \code{browseVignettes(package = "dvfisk")}
@@ -12,7 +12,7 @@ To learn more about \code{dvfisk}, start with the vignettes:
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://kagervall.github.io/dvfisk}
+  \item \url{https://kagervall.github.io/dvfisk/}
   \item \url{https://github.com/kagervall/dvfisk}
   \item Report bugs at \url{https://github.com/kagervall/dvfisk/issues}
 }

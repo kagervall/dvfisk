@@ -1,7 +1,7 @@
 Package: dvfisk
 Type: Package
-Title: Query and Get Data From various API:s at https://dvfisk.slu.se
-Version: 0.3.5
+Title: Query and Get Data from Various API:s at https://dvfisk.slu.se
+Version: 0.3.6
 Authors@R: person(
     "Anders", "Kagervall",
     role = c("aut", "cre"),
@@ -15,14 +15,15 @@ Description: Query and get gata from the Swedish databases KUL, NORS and SERS
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
-URL: https://kagervall.github.io/dvfisk, https://github.com/kagervall/dvfisk
+URL: https://kagervall.github.io/dvfisk/, https://github.com/kagervall/dvfisk
 BugReports: https://github.com/kagervall/dvfisk/issues
 Imports: 
     httr2,
     settings
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
 Depends: 
     R (>= 4.1.0)
 Suggests: 
-    sf
+    sf,
+    jsonlite
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2

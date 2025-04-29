@@ -9,7 +9,7 @@ correctly spelled names of counties (län) will generate a result."><meta proper
 
     <a class="navbar-brand me-2" href="../index.html">dvfisk</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.5</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.6</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,8 +68,9 @@ description of API <a href="https://dvfisk.slu.se/swagger/index.html" class="ext
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># This example will access the Internet to get the data and will not work offline</span></span></span>
-<span class="r-in"><span><span class="fu">nors_individ_kommuner</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in nors_individ_kommuner():</span> parameter lan is required</span>
+<span class="r-in"><span><span class="fu">nors_individ_kommuner</span><span class="op">(</span>lan <span class="op">=</span> <span class="st">"Uppsala Län"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "Enköping"   "Heby"       "Håbo"       "Knivsta"    "Tierp"     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [6] "Uppsala"    "Älvkarleby" "Östhammar" </span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>

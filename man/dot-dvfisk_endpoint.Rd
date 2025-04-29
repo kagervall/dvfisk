@@ -17,9 +17,4 @@ A httr2 request object
 \description{
 Internal function to get the base request for the SersVix API
 }
-\examples{
-\dontrun{
-req <- .dvfiskendpoint("SersVix", "lan")
-}
-}
 \keyword{internal}

@@ -15,9 +15,4 @@ a data.frame with the body of the request
 \description{
 Internal function that returns the body of a request
 }
-\examples{
-\dontrun{
-body <- .dvfisk_get_body(req)
-}
-}
 \keyword{internal}

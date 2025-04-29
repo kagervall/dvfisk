@@ -12,10 +12,6 @@
 #' A httr2 request object
 #'
 #' @keywords internal
-#' @examples
-#' \dontrun{
-#' req <- .dvfiskendpoint("SersVix", "lan")
-#' }
 .dvfisk_endpoint <-function(what, endpoint) {
   known_apis <- c("KulFangst", "KulIndivid", "KulLangd",
                   "NorsAggregerad", "NorsFangst", "NorsIndivid",
@@ -43,16 +39,12 @@
 #' @returns a data.frame with the body of the request
 #' @keywords internal
 #'
-#' @examples
-#' \dontrun{
-#' body <- .dvfisk_get_body(req)
-#' }
 .dvfisk_get_body <- function(req) {
   resp <- httr2::req_perform(req)
-  if (requireNamespace("jsonlite", quietly = TRUE)) {
+#  if (requireNamespace("jsonlite", quietly = TRUE)) {
     body <- httr2::resp_body_json(resp, simplifyVector = TRUE)
-  } else {
-    body <- NULL
-  }
+#  } else {
+#    body <- NULL
+#  }
   return(body)
 }

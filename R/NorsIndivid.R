@@ -44,7 +44,7 @@ nors_individ_lan <- function() {
 #'
 #' @examples
 #' # This example will access the Internet to get the data and will not work offline
-#' nors_individ_kommuner()
+#' nors_individ_kommuner(lan = "Uppsala Län")
 #'
 nors_individ_kommuner <- function(lan) {
   if (missing(lan)) {
